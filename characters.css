@@ -1,0 +1,38 @@
+div#character-list {
+  width: 900px;
+  height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+div#character-list a.character-panel {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.8;
+  transition: all 0.33s;
+  cursor: pointer;
+}
+
+div#character-list a.character-panel:hover {
+  opacity: 1;
+}
+
+div#character-list a.character-panel img {
+  width: 70px;
+  height: 70px;
+  background-color: #36384a;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  /* Light */
+}
+
+div#character-list a.character-panel span {
+  font-size: 16px;
+  font-weight: 700;
+}

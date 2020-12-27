@@ -1,0 +1,70 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-image: url(img/tavern.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'IBM Plex Sans Condensed';
+  color: #F5F5F7;
+}
+
+ul#navbar {
+  height: 70px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 999;
+  background-color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+ul#navbar li {
+  width: auto;
+  font-size: 15px;
+  font-weight: 400;
+  color: #F5F5F7;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.33s;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+ul#navbar li:hover {
+  opacity: 1;
+  text-shadow: 0 0 9px #FA8072, 0 0 18px #FA8072, 0 0 27px #FA8072, 0 0 36px #FA8072, 0 0 45px #FA8072, 0 0 54px #FA8072;
+}
+
+ul#navbar li#nav-logo {
+  align-self: center;
+}
+
+ul#navbar li#nav-logo img {
+  width: 48px;
+  height: 48px;
+}
+
+div#page {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  background-color: #222431;
+  padding: 40px;
+  margin-top: 70px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
